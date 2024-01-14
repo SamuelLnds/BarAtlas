@@ -1,0 +1,31 @@
+/* Variables couleurs */
+
+$clr-squarespace : rgba(18, 18, 18, 1);
+$clr-white : rgba(252, 252, 252, 1);
+$clr-duckblue : rgba(0, 83, 99, 1);
+$clr-golden-one : rgba(205, 172, 99, 1);
+$clr-alaska : rgba(0, 127, 161, 1);
+$clr-sahara : rgba(182, 85, 0, 1);
+$clr-ammonia : rgba(130, 15, 1, 1);
+
+
+/* Breakpoints */
+
+$brp-tablet : 875px;
+
+
+/* Variables mesures */
+
+$fs-txt : 20px;
+
+$header-height : 100px;
+
+$nav-tab-difference: 3rem;
+$nav-tab-width : calc(100% - $nav-tab-difference);
+
+$footer-tab-difference: 3rem;
+$footer-tab-width : calc(100% - $footer-tab-difference);
+
+/* Variables animations */
+
+$animationSpeed: 40s;

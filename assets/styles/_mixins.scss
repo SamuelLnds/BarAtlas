@@ -1,0 +1,14 @@
+@mixin base-font {
+    font-family: Comfortaa, sans-serif;
+    font-weight: 400;
+}
+
+@mixin head-font {
+    font-family: Sodabery, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}

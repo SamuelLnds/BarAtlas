@@ -1,0 +1,117 @@
+/* Variables couleurs */
+/* Breakpoints */
+/* Variables mesures */
+/* Variables animations */
+/* comfortaa-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/comfortaa-v45-latin-regular.woff2") format("woff2");
+}
+/* comfortaa-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/comfortaa-v45-latin-600.woff2") format("woff2");
+}
+/* sodabery - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Sodabery";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Sodabery.woff2") format("woff2");
+}
+.hero {
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url("../images/Alaska-Hero.jpg") no-repeat center/cover, url("../images/Alaska-lowres.jpg") no-repeat center/cover;
+  filter: brightness(0.4);
+}
+
+.carte-concept .inner-section {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.carte-concept .inner-section > div {
+  height: calc(100svh - 100px);
+  width: 50%;
+  overflow: hidden;
+  background-color: rgb(0, 127, 161);
+  display: flex;
+  align-items: center;
+}
+.carte-concept .inner-section > div img {
+  min-width: 100%;
+  height: calc(100svh - 100px);
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-banner {
+  height: 50svh;
+  overflow: hidden;
+  position: relative;
+}
+.video-banner video {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.carte {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 127, 161);
+}
+.carte .inner-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin-top: 4rem;
+}
+.carte .menu-section .menu-title {
+  text-transform: unset;
+  text-align: center;
+  margin: 0 0 6rem;
+  font-size: 45px;
+}
+.carte .menu-section .menu-title::before, .carte .menu-section .menu-title::after {
+  content: " - ";
+  margin: 0 0.5rem;
+}
+.carte .menu-section .menu-list {
+  list-style: none;
+  padding: 0 3rem;
+  font-size: 30px;
+}
+.carte .menu-section .menu-list .menu-price {
+  float: right;
+}
+.carte .menu-section .menu-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+footer {
+  background: url("../images/Alaska-Footer.jpg") no-repeat center/cover;
+}/*# sourceMappingURL=alaska-styling.css.map */

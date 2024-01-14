@@ -1,0 +1,38 @@
+/* Variables couleurs */
+/* Breakpoints */
+/* Variables mesures */
+/* comfortaa-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/comfortaa-v45-latin-regular.woff2") format("woff2");
+}
+/* comfortaa-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/comfortaa-v45-latin-600.woff2") format("woff2");
+}
+/* sodabery - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Sodabery";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Sodabery.woff2") format("woff2");
+}
+.accueil-concept {
+  text-align: center;
+}
+.accueil-concept .inner-section {
+  padding-top: calc(50svh - 300px);
+}
+.accueil-concept .inner-section p {
+  width: 50%;
+  margin-inline: auto;
+  margin-top: 4.25rem;
+}/*# sourceMappingURL=about.css.map */

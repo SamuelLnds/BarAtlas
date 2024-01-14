@@ -1,0 +1,116 @@
+@import '_variables.scss', '_fonts.scss', '_mixins.scss';
+
+
+.hero {
+
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: url("../images/Sahara-Hero.jpg") no-repeat center / cover, url("../images/Sahara-lowres.jpg") no-repeat center / cover;
+        filter: brightness(.4);
+    }
+
+
+}
+
+.carte-concept {
+    .inner-section {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        > div {
+
+            height: calc(100svh - $header-height);
+            width: 50%;
+            overflow: hidden;
+            
+            background-color: $clr-sahara;
+
+            display: flex;
+            align-items: center;
+
+            img {
+                min-width: 100%;
+                height: calc(100svh - $header-height);
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+            }
+        }
+
+    }
+}
+
+.video-banner {
+    height: 50svh;
+    overflow: hidden;
+    position: relative;
+
+    video {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%) rotate(90deg) scale(.5);
+    }
+}
+
+.carte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $clr-sahara;
+
+    .inner-section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem;
+      margin-top: 4rem;
+    }
+
+    .menu-section {
+
+        .menu-title {
+            text-transform: unset;
+            text-align: center;
+            margin: 0 0 6rem;
+            font-size: 45px;
+
+            &::before, &::after {
+                content: ' - ';
+                margin: 0 0.5rem;
+            }
+
+        }
+
+      .menu-list {
+        list-style: none;
+        padding: 0 3rem;
+        font-size: 30px;
+
+        .menu-price {
+          float: right;
+        }
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 4rem;
+        }
+      }
+    
+  }
+}
+
+footer {
+    background: url('../images/Sahara-Footer.jpg') no-repeat center / cover;
+}

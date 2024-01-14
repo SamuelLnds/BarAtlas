@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* Variables couleurs */
+/* Breakpoints */
+/* Variables mesures */
+/* Variables animations */
+/* comfortaa-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/comfortaa-v45-latin-regular.woff2") format("woff2");
+}
+/* comfortaa-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/comfortaa-v45-latin-600.woff2") format("woff2");
+}
+/* sodabery - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Sodabery";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Sodabery.woff2") format("woff2");
+}
+/* Règles de bases */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+  background-color: rgb(18, 18, 18);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: Comfortaa, sans-serif;
+  font-weight: 400;
+}
+
+/* Image reset */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Règles objets récurrents */
+.inner-section {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+section {
+  height: calc(100svh - 100px);
+  scroll-snap-align: start;
+  /* Temporary border */
+}
+section:first-of-type {
+  margin-top: 100px;
+}
+
+.hero {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.inner-cln {
+  padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+.inner-cln p {
+  margin-bottom: 1rem;
+}
+
+/* Styling des typos */
+p {
+  font-size: 20px;
+  font-family: Comfortaa, sans-serif;
+  font-weight: 400;
+}
+
+.CTA-txt {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.sub-headline {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  font-family: Sodabery, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+h1:is(h1), h2:is(h1), h3:is(h1) {
+  font-size: 128px;
+}
+h1:is(h2), h2:is(h2), h3:is(h2) {
+  font-size: 48px;
+}
+h1:is(h3), h2:is(h3), h3:is(h3) {
+  font-size: 32px;
+}
+
+/* Header styling */
+header {
+  background-color: rgb(18, 18, 18);
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 5;
+}
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+@media screen and (width < 875px) {
+  header .header-content {
+    justify-content: center;
+  }
+}
+header .header-content img.logo {
+  width: 100px;
+  aspect-ratio: 1/1;
+}
+
+nav ul, footer ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (width < 875px) {
+  nav ul, footer ul {
+    justify-content: center;
+  }
+}
+nav ul li, footer ul li {
+  font-size: 20px;
+  text-align: center;
+  text-wrap: nowrap;
+}
+nav ul li a, footer ul li a {
+  padding: 2rem;
+}
+
+.contact-btn {
+  padding: 0.5rem 0.75rem;
+  border: solid 1px rgb(252, 252, 252);
+  text-wrap: nowrap;
+  text-align: center;
+}
+
+/*
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    -type: y mandatory;
+    overflow-y: scroll;
+}
+*/
+/* Footer styling */
+footer {
+  position: relative;
+  min-height: 300px;
+}
+footer .back2top {
+  position: fixed;
+  inset: auto 3rem 1.5rem auto;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  border: 2px solid rgb(252, 252, 252);
+  border-radius: 100%;
+  background-color: rgb(18, 18, 18);
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+footer .back2top.show {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  position: relative;
+}
+footer .bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url("../images/Footer-Bg.png") no-repeat center/cover;
+  filter: brightness(0.4);
+}
+
+/* Footer cartes */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  width: 1440px;
+  min-height: 25rem;
+  margin-inline: auto;
+  padding: 0 0 4rem;
+}
+.footer-content ul {
+  padding-top: 6rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.footer-content ul a {
+  font-size: 1.5rem;
+}
+
+/* Active tab */
+.active-nav-tab, nav a:focus, nav a:hover {
+  position: relative;
+}
+.active-nav-tab::before, nav a:focus::before, nav a:hover::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 3rem);
+  height: 0.125rem;
+  border-radius: 1rem;
+  inset: auto auto 1.67rem 1.5rem;
+  z-index: -1;
+  background-color: rgb(0, 83, 99);
+  animation: slideRight 0.3s ease-in-out forwards;
+}
+
+footer a:focus, footer a:hover {
+  position: relative;
+  z-index: 1;
+}
+footer a:focus::before, footer a:hover::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 3rem);
+  height: 0.125rem;
+  border-radius: 1rem;
+  inset: auto auto 1.67rem 1.5rem;
+  z-index: -1;
+  background-color: rgb(252, 252, 252);
+  animation: slideRight 0.3s ease-in-out forwards;
+}
+
+@keyframes slideRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(100% - 3rem);
+  }
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: rgb(252, 252, 252) rgb(18, 18, 18);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(18, 18, 18);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  border-inline: 3px solid rgb(18, 18, 18);
+  border-block: 3px solid rgb(18, 18, 18);
+}
+
+/* Scroll snap */
+body {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: calc(100svh - 100px);
+  margin-top: 100px;
+}
+
+section, .video-banner {
+  scroll-snap-align: start;
+}
+
+footer {
+  scroll-snap-align: start;
+}/*# sourceMappingURL=general-styling.css.map */

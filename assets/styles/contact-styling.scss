@@ -1,0 +1,47 @@
+h1 {
+    margin-bottom: 4rem;
+}
+
+.inner-section {
+    text-align: center;
+
+    .split {
+        display: grid;
+
+        grid-template-columns: 50% 50%;
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 1 / 0.5;
+        }
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                margin-bottom: 2rem;
+            }
+
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+        }
+
+    }
+}
+
+.reseaux {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    img {
+        max-width: 5rem;
+    }
+
+}

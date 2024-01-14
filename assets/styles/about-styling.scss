@@ -1,0 +1,117 @@
+@import '_variables.scss', '_fonts.scss', '_mixins.scss';
+
+section {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inner-section {
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+
+        p {
+            padding-block: 1rem;
+            margin-inline: auto;
+        }
+
+        padding-block: 2.5rem;
+
+        .box-container {
+            padding: 0 2rem;
+        }
+
+        
+    }
+
+    &.histoire {
+
+        .inner-section {
+            border: 2px solid $clr-white;
+        }
+    }
+
+}
+
+.equipe {
+    flex-direction: column;
+
+    .dirigeants-photos {
+        display: flex;
+        justify-content: space-around;
+        width: 1080px;
+        margin-inline: auto;
+    
+        .photo-wrap {
+
+            display: flex;
+            flex-direction: column;
+            
+            img {
+                border: 1px solid $clr-white;
+                object-fit: cover;
+                width: 240px;
+                height: 280px;
+            }
+
+            figcaption {
+                margin-top: 1rem;
+            }
+
+        }
+    }
+
+    h2 {
+        margin-bottom: 4rem;
+    }
+
+    h3 {
+        margin-bottom: 3rem;
+    }
+    
+}
+
+
+.expansion {
+
+    .expansion-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        text-align: start;
+    
+        width: 1440px;
+        margin-inline: auto;
+    
+        .txt-expansion {
+            width: 525px;
+    
+        }
+    
+    }
+
+    &.expansion h2 {
+        margin-bottom: 3rem;
+    }
+
+    .video {
+
+        display: flex;
+        align-items: center;
+
+        video {
+            width: 560px;
+            height: 315px;
+            border: solid 1px $clr-white;
+            display: block;
+        }
+
+    }
+
+
+}
+

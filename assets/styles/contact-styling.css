@@ -1,0 +1,38 @@
+h1 {
+  margin-bottom: 4rem;
+}
+
+.inner-section {
+  text-align: center;
+}
+.inner-section .split {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.inner-section .split iframe {
+  width: 100%;
+  aspect-ratio: 1/0.5;
+}
+.inner-section .split > div {
+  display: flex;
+  flex-direction: column;
+}
+.inner-section .split > div h2 {
+  margin-bottom: 2rem;
+}
+.inner-section .split > div .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reseaux {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.reseaux img {
+  max-width: 5rem;
+}/*# sourceMappingURL=contact-styling.css.map */
